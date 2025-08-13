@@ -1662,8 +1662,8 @@ func (man Manager) LoadConfig() FleetConfig {
 			Timeout:          man.getConfigInt("kafkarest.timeout"),
 		},
 		License: LicenseConfig{
-			Key:              man.getConfigString("license.key"),
-			EnforceHostLimit: man.getConfigBool("license.enforce_host_limit"),
+			Key:              "",
+			EnforceHostLimit: false,
 		},
 		Vulnerabilities: VulnerabilitiesConfig{
 			DatabasesPath:               man.getConfigString("vulnerabilities.databases_path"),
